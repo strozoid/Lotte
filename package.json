@@ -5,12 +5,7 @@
   "types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
-    "build": "tsc --build --verbose",
-    "build:languages": "node --no-deprecation ./scripts/copyLanguagePackage.mjs",
-    "build:manifest": "node --no-deprecation ./scripts/copyManifest.mjs",
-    "build:prettier": "npx prettier -w ./src",
-    "build:full": "npm run build:prettier && npm run build && npm run build:manifest && npm run build:languages",
-    "start": "node --no-deprecation ./dist/index.js"
+    "start": "node --no-deprecation ./src/index.js"
   },
   "engines": {
     "node": ">=16"
